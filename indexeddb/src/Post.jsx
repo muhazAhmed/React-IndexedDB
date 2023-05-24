@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import './App.css'
 // import axios from 'axios'
 import { openDB } from 'idb';
+import { Link } from 'react-router-dom';
 
 
 function Post() {
@@ -65,7 +66,8 @@ function Post() {
             name="password"
           />
         </div>
-        <button>Submit</button>
+        <Link to="/get"><button>Submit</button></Link>
+        
       </form>
     </>
   )
